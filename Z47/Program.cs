@@ -4,15 +4,15 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-int numRows = SetNumber("Rows: ");
-int numColumns = SetNumber("Columns: ");
+int numRows = SetNumber("Rows");
+int numColumns = SetNumber("Columns");
 
 var matrix = GetMatrix(numRows, numColumns);
 Print(matrix);
 
 int SetNumber(string numberName)
 {
-    System.Console.Write($"Enter number {numberName}");
+    System.Console.Write($"Enter number {numberName}:");
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
